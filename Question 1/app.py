@@ -24,7 +24,7 @@ def get_numbers():
             else:
                 return jsonify({'error': f'Failed to fetch data from URL: {url}'}), 500
 
-        # Sort the combined numbers list in ascending order and remove duplicates
+        
         combined_numbers = sorted(set(combined_numbers))
 
         return jsonify({'numbers': combined_numbers})
